@@ -1,6 +1,6 @@
-# game-it-out
+# Game It Out
 
-## 5th Semester Web Programming Project: CSE 4540
+We have developed this wedsite for our Web Programming project in the fifth semester.
 
 Live Site Link: https://game-it-out.netlify.app/index.html
 
