@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Game-It-Out</title>
+  </head>
+  <body class="bg-dark text-white">
+    <header>
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-md-top fs-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="./index.html"
+            ><img
+              src="images/favicon.svg"
+              alt="Logo"
+              width="50px"
+              height="50px"
+            />
+            Game it Out</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./credits.html">Credits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="col-md-8 col-sm-12 mx-auto">
+      <iframe
+        src="./games/flappy/index.html"
+        name="myFrame"
+        class="mpanefset w-100 rounded"
+        frameborder="0"
+        scrolling="no"
+      >
+      </iframe>
+      <h1 class="text-center text-warning">Flappy Bird</h1>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="footer-bg p-md-5 px-2 py-5 d-flex flex-wrap">
+      <div class="footer-text col-12 col-md-9">
+        <a class="text-decoration-none text-white me-2" href="">Download Now</a>
+        <a class="text-decoration-none text-white" href="">License</a>
+        <br />
+        <a class="text-decoration-none text-white me-2" href="">About</a>
+        <a class="text-decoration-none text-white me-2" href="">Features</a>
+        <a class="text-decoration-none text-white me-2" href="">Pricing</a>
+        <a class="text-decoration-none text-white me-2" href="">Careers</a>
+        <a class="text-decoration-none text-white me-2" href="">Help</a>
+        <a class="text-decoration-none text-white" href="">Privacy Policy</a>
+        <br />
+        <p class="text-muted py-1">
+          &copy2021 Game It Out. All Rights Reserved.
+        </p>
+      </div>
+      <!-- footer app section -->
+      <div class="footer-app col-6 col-md-3">
+        <h5 class="text-white">Get The App</h5>
+        <figure>
+          <a href="#">
+            <img src="images/play-store.svg" alt="App Store App" />
+          </a>
+        </figure>
+        <figure>
+          <a href="#">
+            <img src="images/app-store.svg" alt="Play Store App" />
+          </a>
+        </figure>
+      </div>
+    </footer>
+    <!-- Javascript Libaries -->
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- PopperJS v1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

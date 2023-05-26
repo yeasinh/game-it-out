@@ -1,0 +1,123 @@
+/****************************************/
+/* common styles used for v1 through v4 */
+/****************************************/
+
+body {
+  font-family: "Luckiest Guy", cursive;
+  color: bisque;
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: rgb(253, 202, 139);
+}
+a:hover {
+  color: yellow;
+  font-size: 1.2em;
+}
+#stats {
+  border: 2px solid black;
+}
+#controls {
+  width: 28em;
+  float: left;
+  padding: 1em;
+  font-size: 0.7em;
+}
+#controls th {
+  text-align: right;
+  vertical-align: middle;
+}
+#instructions {
+  clear: left;
+  float: left;
+  width: 17em;
+  padding: 1em;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+}
+#racer {
+  position: relative;
+  z-index: 0;
+  width: 640px;
+  height: 480px;
+  margin-left: 20em;
+  border: 2px solid black;
+}
+#canvas {
+  position: absolute;
+  z-index: 0;
+  width: 640px;
+  height: 480px;
+  z-index: 0;
+  background-color: #7299ee;
+}
+#mute {
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+  background: url(images/mute.png);
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 20em;
+}
+#mute.on {
+  background-position: -32px 0px;
+}
+
+/**************************************************/
+/* rudimentary heads up display (only used in v4) */
+/**************************************************/
+
+#hud {
+  position: absolute;
+  z-index: 1;
+  width: 640px;
+  padding: 5px 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.8em;
+  background-color: rgba(255, 0, 0, 0.4);
+  color: rgb(22, 22, 22);
+  border-bottom: 2px solid rgb(31, 30, 30);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#hud .hud {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  border: 1px solid rgb(22, 6, 6);
+  margin: 0 5px;
+  transition-property: background-color;
+  transition-duration: 2s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 2s;
+}
+#hud #speed {
+  float: right;
+}
+#hud #current_lap_time {
+  float: left;
+}
+#hud #last_lap_time {
+  float: left;
+  display: none;
+}
+#hud #fast_lap_time {
+  display: block;
+  width: 12em;
+  margin: 0 auto;
+  text-align: center;
+  transition-property: background-color;
+  transition-duration: 2s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 2s;
+}
+#hud .value {
+  color: rgb(19, 18, 18);
+  font-weight: bold;
+}
+#hud .fastest {
+  background-color: rgba(255, 215, 0, 0.5);
+}
